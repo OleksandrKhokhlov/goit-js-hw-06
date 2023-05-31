@@ -11,6 +11,7 @@ const inputRef = document.querySelector("#controls input");
 
 function createBoxes(amount) {
   destroyBoxes();
+  inputRef.value = '';
   const arrDivEl = [];
   let width = 30;
   let height = 30;
@@ -28,6 +29,7 @@ function createBoxes(amount) {
 }
 
 function destroyBoxes() {
+  inputRef.value = "";
   boxesRef.innerHTML = "";
 }
 
