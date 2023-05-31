@@ -10,6 +10,7 @@ const destroyBtnRef = document.querySelector("button[data-destroy]");
 const inputRef = document.querySelector("#controls input");
 
 function createBoxes(amount) {
+  destroyBoxes();
   const arrDivEl = [];
   let width = 30;
   let height = 30;
